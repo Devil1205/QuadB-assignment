@@ -18,7 +18,7 @@ function Fetch({ Backend_URL }: any) {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(Backend_URL);
+            const response = await fetch(Backend_URL+"/QuadBAPI/data");
             const responseJson = await response.json();
             responseJson.forEach((elem: any, index: number) => {
                 elem.id = index;

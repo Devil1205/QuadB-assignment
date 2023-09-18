@@ -9,6 +9,9 @@ const saveData = async () => {
         const responseJson  = await response.json();
         const responseJsonArray = Object.values(responseJson);
 
+        //Empty previous data
+        await Data.deleteMany({});
+
         //iterating first 10 entries of data and pushing it to array
         for(let i=0;i<10;i++)
         {

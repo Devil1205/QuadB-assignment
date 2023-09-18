@@ -5,7 +5,8 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
 
-  const Backend_URL = "http://localhost:5000/QuadBAPI/data";
+  // const Backend_URL = "http://localhost:5000/QuadBAPI/data";
+  const Backend_URL = "https://quadb-xdqa.onrender.com";
 
   return (
     <Router>
