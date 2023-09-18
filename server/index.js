@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+require("dotenv").config();
+const port = process.env.PORT || 5000;
 const saveData = require('./Routes/storeData');
 const cors = require('cors');
 require('./db/connectDB');
